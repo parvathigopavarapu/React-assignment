@@ -41,12 +41,12 @@ const EmployeeList = ({ employees, fetchEmployeeList }) => {
 }
 const mapStateToProps = state => {
     return {
-        employees: state.employees
+        employees : state.employees
     }
 }
 const mapDispatchToProps = dispatch => {
     return {
-        fetchEmployeeList: () => dispatch(fetchEmployeeList())
+        fetchEmployeeList : () => dispatch(fetchEmployeeList())
     }
 }
 

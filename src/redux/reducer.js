@@ -2,7 +2,7 @@ import {FETCH_EMPLOYEES, USER_DETAILS} from "./actionTypes";
 
 let initialState = {
     employees : [],
-    is_valid_user : false
+    is_valid_user : false,
 
 }
 

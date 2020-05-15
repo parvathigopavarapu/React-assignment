@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import { connect } from "react-redux";
-import { handleSubmit } from '../redux/index';
+import { handleSubmit } from "../redux/index";
 
 const Login = ({ is_userValid, handleSubmit }) => {
 
@@ -12,7 +12,7 @@ const Login = ({ is_userValid, handleSubmit }) => {
 
         <div className="login">
             <h1>Login</h1>
-            <form onSubmit={() => handleSubmit(username, password)}>
+            <form onSubmit = {() => handleSubmit(username, password)}>
                 <input
                     type="email"
                     name="email"
@@ -35,11 +35,11 @@ const Login = ({ is_userValid, handleSubmit }) => {
                     className="btn-primary login-btn"
                 > Login
                 </button>
-                {/* {(username == "" || password == ""  ||  is_userValid) ? null : 
+                {(username == "" || password == ""  ||  is_userValid) ? null : 
                 <textarea className="bg-danger">
                     Sorry, Wrong Combination of Username and Passwordd 
                     </textarea>
-                } */}
+                }
             </form>
         </div>
 
@@ -55,7 +55,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        handleSubmit: (username, password) =>
+        handleSubmit : (username, password) =>
             dispatch(handleSubmit(username, password))
     }
 }
