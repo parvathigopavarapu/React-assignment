@@ -3,11 +3,16 @@ import './App.css';
 import Login from './components/Login'
 import EmployeeList from './components/EmployeeList';
 import {connect} from 'react-redux'
+import ErrorPage from './components/ErrorPage';
 
 function App({is_loggedIn}) {
   return (
       <div className="App">
-        {is_loggedIn ? <EmployeeList /> :  <Login />}
+        {is_loggedIn ?
+         <EmployeeList /> : 
+         <> <Login /> 
+         {/* <ErrorPage/> */}
+         </>}
       </div>
   );
 }

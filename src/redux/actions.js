@@ -1,5 +1,6 @@
-import { FETCH_EMPLOYEES } from "./actionTypes";
-import { USER_DETAILS } from "./actionTypes"
+
+export const FETCH_EMPLOYEES = "FETCH_EMPLOYEES";
+export const USER_DETAILS = "USER_DETAILS"
 
 function fetchEmployees(employees){
     return {

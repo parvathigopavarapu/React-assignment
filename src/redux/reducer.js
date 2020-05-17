@@ -1,9 +1,8 @@
-import {FETCH_EMPLOYEES, USER_DETAILS} from "./actionTypes";
+import {FETCH_EMPLOYEES, USER_DETAILS} from "./actions";
 
 let initialState = {
     employees : [],
     is_valid_user : false,
-
 }
 
 function employeesReducer (state = initialState, action) {

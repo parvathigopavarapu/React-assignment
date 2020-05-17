@@ -1,1 +1,1 @@
-export {fetchEmployeeList, handleSubmit} from './action'
+export {fetchEmployeeList, handleSubmit} from './actions'
